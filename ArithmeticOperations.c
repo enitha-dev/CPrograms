@@ -4,18 +4,18 @@ int main ()
 	float x = 6;
 	float y = 10;
 	float sum;
-	sum = x + y;
-	printf ("the addition of 6 and 10 is %f \n",x+y);
+	sum = x +y;
+	printf ("the addition of %f and %f is %f \n",x,y,sum);
 	float a = 8;
 	float b = 5;
 	float sub;
-	sub = a - b;
-	printf ("the subraction of 8 and 5 is %f \n",a-b);
+	sub = a-b;
+	printf ("the subraction of %f and %f is %f \n",a,b,sub);
 	float multiplication;
-	multiplication = (x+y) * (a-b) ;
-	printf ("the multiplication of 16 and 3 is %f \n",multiplication);
+	multiplication = sum * sub;
+	printf ("the multiplication of %f and %f is %f \n",sum,sub,multiplication);
 	float division;
-	division = (x+y) / (a-b) ;
-	printf ("the division of 16 and 3 is %f",division);
-    return 0;
-}	
+	division = sum / sub;
+	printf ("the division of %f and %f is %f",sum,sub,division);
+	return 0;
+}
